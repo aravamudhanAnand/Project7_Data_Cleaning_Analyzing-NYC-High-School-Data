@@ -18,24 +18,25 @@ Here are the links to all of the data sets we'll be using:
 - Graduation outcomes - The percentage of students who graduated, and other outcome information
 - Demographics - Demographic information for each school
 - School survey - Surveys of parents, teachers, and students at each school
-
 All of these data sets are interrelated. We'll need to combine them into a single data set before we can find correlations.
-
-<h5> Note </h5><br/>
-- Only high school students take the SAT, so we'll want to focus on high schools.
-- New York City is made up of five boroughs, which are essentially distinct regions.
-- New York City schools fall within several different school districts, each of which can contains dozens of schools.
-- Our data sets include several different types of schools. We'll need to clean them so that we can focus on high schools only.
-- Each school in New York City has a unique code called a DBN, or district borough number.
+<h5>Note:</h5>
+<ul>
+  <li>Only high school students take the SAT, so we'll want to focus on high schools.</li>
+  <li>New York City is made up of five boroughs, which are essentially distinct regions.</li>
+  <li>New York City schools fall within several different school districts, each of which can contains dozens of schools.</li>
+  <li>Our data sets include several different types of schools. We'll need to clean them so that we can focus on high schools only.</li>
+  <li>Each school in New York City has a unique code called a DBN, or district borough number.</li>
 Source: Dataquest.io
+</ul> 
 
-<h5> Steps:</h5> <br/>
-1. Reading all csv and survey txt data files.
-2. Making sure all datasets have a unique DBN.
+<h5> Steps:</h5> 
+<ul>
+  <li> Reading all csv and survey txt data files.
+  <li>Making sure all datasets have a unique DBN.
 if not, generate DBN code by concatenating two fields (eg. class_size dataset requires a DBN column by concatenating CSD and School code columns)
-3. Create one column called SAT_SCORE to add ["SAT Math Avg. Score", "SAT Critical Reading Avg. Score", "SAT Writing Avg. Score"] column values.
-4. Parse the latitude and longitude coordinates for each school. This will enable us to map the schools and uncover any geographic patterns in the data. 
-5. Condense the class_size, graduation, and demographics data sets so that each DBN is unique.
-6. Merge all datasets into one "Combined" dataset for further analysis.
-7. Explore "combined" dataset, find correlations, plot graphs and basemaps to undestand underlying correlation between SAT Scores and other factors.
-
+  <li> Create one column called SAT_SCORE to add ["SAT Math Avg. Score", "SAT Critical Reading Avg. Score", "SAT Writing Avg. Score"] column values.
+  <li>Parse the latitude and longitude coordinates for each school. This will enable us to map the schools and uncover any geographic patterns in the data. 
+  <li>Condense the class_size, graduation, and demographics data sets so that each DBN is unique.
+  <li>Merge all datasets into one "Combined" dataset for further analysis.
+  <li>Explore "combined" dataset, find correlations, plot graphs and basemaps to undestand underlying correlation between SAT Scores and other factors.
+</ul>
