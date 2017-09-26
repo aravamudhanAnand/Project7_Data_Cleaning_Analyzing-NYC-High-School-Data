@@ -1,6 +1,6 @@
 For the purposes of this project, we will be using data about New York City public schools.
 
-<h3>INTRODUCTION of the DATASET: </h3><br/>
+<h3>INTRODUCTION: </h3><br/>
 
 One of the most controversial issues in the U.S. educational system is the efficacy of standardized tests, and whether they're unfair to certain groups. <br/>
 The SAT, or Scholastic Aptitude Test, is an exam that U.S. high school students take before applying to college. Colleges take the test scores into account when deciding who to admit, so it's fairly important to perform well on it.
