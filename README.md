@@ -22,14 +22,14 @@ Here are the links to all of the data sets we'll be using:
 All of these data sets are interrelated. We'll need to combine them into a single data set before we can find correlations.
 
 <h5> Note </h5><br/>
-1. Only high school students take the SAT, so we'll want to focus on high schools.
-2. New York City is made up of five boroughs, which are essentially distinct regions.
-3. New York City schools fall within several different school districts, each of which can contains dozens of schools.
-4. Our data sets include several different types of schools. We'll need to clean them so that we can focus on high schools only.
-5. Each school in New York City has a unique code called a DBN, or district borough number.
+- Only high school students take the SAT, so we'll want to focus on high schools.
+- New York City is made up of five boroughs, which are essentially distinct regions.
+- New York City schools fall within several different school districts, each of which can contains dozens of schools.
+- Our data sets include several different types of schools. We'll need to clean them so that we can focus on high schools only.
+- Each school in New York City has a unique code called a DBN, or district borough number.
 Source: Dataquest.io
 
-Steps:
+<h5> Steps:</h5> <br/>
 1. Reading all csv and survey txt data files.
 2. Making sure all datasets have a unique DBN.
 if not, generate DBN code by concatenating two fields (eg. class_size dataset requires a DBN column by concatenating CSD and School code columns)
@@ -37,3 +37,5 @@ if not, generate DBN code by concatenating two fields (eg. class_size dataset re
 4. Parse the latitude and longitude coordinates for each school. This will enable us to map the schools and uncover any geographic patterns in the data. 
 5. Condense the class_size, graduation, and demographics data sets so that each DBN is unique.
 6. Merge all datasets into one "Combined" dataset for further analysis.
+7. Explore "combined" dataset, find correlations, plot graphs and basemaps to undestand underlying correlation between SAT Scores and other factors.
+
